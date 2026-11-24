@@ -1,0 +1,8 @@
+{
+	"mcpServers": {
+		"seewo-jikong-test": {
+			"type": "http",
+			"url": "https://connector.test.seewo.com/mcp/apps/seewo_iot_remote"
+		}
+	}
+}

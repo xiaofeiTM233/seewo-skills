@@ -1,0 +1,8 @@
+{
+	"mcpServers": {
+		"seewo-mofang": {
+			"type": "http",
+			"url": "https://connector.seewo.com/mcp/apps/seewo_mofang"
+		}
+	}
+}

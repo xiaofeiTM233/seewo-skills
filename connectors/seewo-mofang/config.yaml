@@ -1,0 +1,17 @@
+server_key: seewo-mofang
+display_name: Seewo Mofang
+display_name_cn: 希沃魔方
+description: 学校综合管理
+description_cn: 学校综合管理
+provider_name: 希沃
+category: 学校管理
+icon: assets/icon.png
+form: mcp
+auth_type: none
+connection_consent:
+  version: 1
+  scopes:
+    - id: data-assets.read
+      description_cn: 查询学校在魔方数据服务平台创建并登记的数据资产
+    - id: data-assets.analyze
+      description_cn: 获取数据资产列表、查询资产数据，进行数据资产分析

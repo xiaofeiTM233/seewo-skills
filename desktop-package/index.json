@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0.3082",
+  "buildDate": "20261124",
+  "shortCommit": "73a2a54b",
+  "defaultEnvironment": "production",
+  "release": null,
+  "attempt": null,
+  "arch": "x64",
+  "observability": {},
+  "artifactBuildId": "1.0.0.3082-73a2a54b2c2a-win32-x64-1795508369425-2034adb7",
+  "observabilityDist": "8cdb50f689b55a48ccf2f5098c19d8aa"
+}

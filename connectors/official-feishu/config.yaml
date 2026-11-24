@@ -1,0 +1,23 @@
+server_key: official-feishu
+form: cli
+auth_type: cli_native
+display_name: Feishu
+display_name_cn: 飞书
+description: 连接飞书，在对话中处理文档、查找消息和发送通知。
+description_cn: 连接飞书，在对话中处理文档、查找消息和发送通知。
+provider_name: 飞书
+category: 效率工具
+icon: assets/icon.png
+cli_login:
+  type: oauth_cli
+  commands:
+    status: lark-cli auth status --json --verify
+    login: >-
+      lark-cli auth login --domain docs,drive --scope
+      "im:message:readonly im:message.group_msg:get_as_user im:message.p2p_msg:get_as_user im:message.reactions:read search:message im:chat:read im:message.send_as_user im:message"
+      --json
+    logout: lark-cli auth logout --json
+cli_install:
+  check: lark-cli --version
+  manual_url: https://github.com/larksuite/cli
+cli_definition: cli.json

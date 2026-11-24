@@ -1,0 +1,19 @@
+server_key: seewo-jikong-test
+display_name: Seewo Central Control Test
+display_name_cn: 希沃集控（测试环境）
+description: 设备运维与管理
+description_cn: 设备运维与管理
+provider_name: 希沃
+category: 学校管理
+icon: assets/icon.png
+form: mcp
+auth_type: none
+connection_consent:
+  version: 1
+  scopes:
+    - id: school-device.read
+      description_cn: 查询学校组织信息、设备信息、智慧管控配置信息
+    - id: device-policy.manage
+      description_cn: 对学校智慧管控配置信息进行操作管理
+    - id: device-disk.clean
+      description_cn: 对学校设备下发操控指令

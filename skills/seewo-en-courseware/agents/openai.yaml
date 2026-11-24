@@ -1,0 +1,6 @@
+interface:
+  display_name: "希沃白板课件 2.0"
+  short_description: "按适用的个人风格制作可编辑的希沃白板课件"
+  default_prompt: "用 $seewo-en-courseware 按我已确认的教学风格制作一份新课件。"
+policy:
+  allow_implicit_invocation: true

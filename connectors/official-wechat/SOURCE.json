@@ -1,0 +1,25 @@
+{
+	"repository": "https://github.com/shenjiecode/pi-wechat-assistant",
+	"ref": "v0.6.3",
+	"tree": "d69bfd3bdb0157f01db4cbab4e724101aa14080f",
+	"license": "MIT",
+	"files": {
+		"LICENSE": "db6154c2367dad963e2d95e78aa7ace632512447",
+		"src/bridge/bridge-lock.ts": "f6193a1d50100c62babf56f7d2e69658df5e7c00",
+		"src/bridge/bridge-ownership.ts": "89c74c407e006455a490246c09649eae7b932863",
+		"src/shared/constants.ts": "7e5f881b93cf065556dc03105ed923895cb95d6f",
+		"src/shared/logger.ts": "0f95e657691586c8f5f0e52d9cf37a82ef0514bf",
+		"src/shared/utils.ts": "dcba6f769611d7174b641d8644f3036e88a3aa79",
+		"src/wechat/api.ts": "23a6d71320ce9921d553bc92e9d93ba2a71d8523",
+		"src/wechat/media.ts": "a4cc291666f844a5d2b2264c9054863d6f5193e9",
+		"src/wechat/security.ts": "a527ad009b2a6eb85c007463804c695acc921035",
+		"src/wechat/types.ts": "b6725e1e350bd8bdeb206f53485609a338dc5fcf"
+	},
+	"integration": "Protocol, media, sender verification and locking source only; product owns credentials, input admission, reply routing and lifecycle. Pi TUI/Agent-loop extension is not loaded.",
+	"changes": [
+		"IO routed through the product cancellable origin/bounds guard",
+		"Global Pi logger excluded; typed product diagnostics are used",
+		"Only the timeout helper is retained from shared/utils.ts; TUI QR helper excluded",
+		"Unused SendMessageReq type import removed"
+	]
+}

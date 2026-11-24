@@ -1,0 +1,8 @@
+{
+	"mcpServers": {
+		"seewo-feedback": {
+			"type": "http",
+			"url": "https://connector.seewo.com/mcp/apps/mf_classroom_report"
+		}
+	}
+}

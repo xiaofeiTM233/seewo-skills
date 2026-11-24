@@ -1,0 +1,9 @@
+{
+	"repository": "https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli",
+	"ref": "v1.0.64",
+	"tree": "e2c0cdf97e016ee76687d9c26986c23a26a84738",
+	"skillsArchive": "https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli/releases/download/v1.0.64/dws-skills.zip",
+	"skillsDigest": "sha256:106999fc60c713aabbcf67fc183553d62feae210bf650a148ed38670468389de",
+	"license": "Apache-2.0",
+	"contents": "Official mono documentation snapshot; original business commands are invoked through the product CLI tool."
+}

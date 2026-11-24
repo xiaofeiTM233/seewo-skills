@@ -1,0 +1,110 @@
+{
+	"schemaVersion": 2,
+	"driver": "scripts/cli.mjs",
+	"commands": {
+		"configure": ["config", "init", "--new", "--brand", "feishu", "--lang", "zh"],
+		"login": [
+			"auth",
+			"login",
+			"--domain",
+			"docs,drive",
+			"--scope",
+			"im:message:readonly im:message.group_msg:get_as_user im:message.p2p_msg:get_as_user im:message.reactions:read search:message im:chat:read im:message.send_as_user im:message",
+			"--json"
+		],
+		"status": ["auth", "status", "--json", "--verify"],
+		"logout": ["auth", "logout", "--json"]
+	},
+	"business": {
+		"publicCommands": [
+			["skills", "list"],
+			["skills", "read"]
+		]
+	},
+	"status": {
+		"authentication": "required",
+		"format": "json",
+		"record": {
+			"path": ["identities", "user"]
+		},
+		"ready": {
+			"all": [
+				{
+					"path": ["status"],
+					"operator": "one-of",
+					"values": ["ready", "needs_refresh"]
+				},
+				{
+					"path": ["verified"],
+					"operator": "equals",
+					"value": true
+				}
+			]
+		},
+		"authRequired": {
+			"all": [
+				{
+					"path": ["status"],
+					"operator": "one-of",
+					"values": ["missing", "expired", "needs_refresh"]
+				},
+				{
+					"path": ["verified"],
+					"operator": "not-equals",
+					"value": true
+				}
+			]
+		},
+		"needsConfiguration": {
+			"all": [
+				{
+					"path": ["error", "type"],
+					"operator": "equals",
+					"from": "error",
+					"value": "config"
+				},
+				{
+					"path": ["error", "subtype"],
+					"operator": "equals",
+					"from": "error",
+					"value": "not_configured"
+				}
+			]
+		},
+		"account": {
+			"parts": [
+				{
+					"path": ["openId"]
+				}
+			],
+			"name": {
+				"path": ["userName"]
+			}
+		},
+		"scopes": {
+			"field": {
+				"path": ["scope"]
+			},
+			"split": "whitespace"
+		}
+	},
+	"challenge": {
+		"textUrls": "standalone-line"
+	},
+	"commandPolicy": {
+		"reservedOptions": [
+			{
+				"names": ["--as"],
+				"allowedValue": "user"
+			}
+		],
+		"fixedArguments": [
+			{
+				"option": "--as",
+				"value": {
+					"literal": "user"
+				}
+			}
+		]
+	}
+}

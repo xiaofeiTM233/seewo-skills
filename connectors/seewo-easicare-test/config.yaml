@@ -1,0 +1,17 @@
+server_key: seewo-easicare-test
+display_name: Seewo EasiCare Test
+display_name_cn: 班级优化大师（测试环境）
+description: 班级学情与教学优化
+description_cn: 班级学情与教学优化
+provider_name: 希沃
+category: 学生成长
+icon: assets/icon.png
+form: mcp
+auth_type: none
+connection_consent:
+  version: 1
+  scopes:
+    - id: teacher-comments.read
+      description_cn: 查询教师撰写的学生评语
+    - id: student-activity.read
+      description_cn: 进行学生点评数据、校园活动、写实活动、家庭打卡、体测数据、争章活动的查看操作

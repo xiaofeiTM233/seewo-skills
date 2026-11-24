@@ -1,0 +1,5 @@
+interface:
+  display_name: GitHub 仓库协作
+  short_description: 查询仓库、问题和拉取请求，按授权完成协作操作。
+  category: 其他
+  default_prompt: 查看 cli/cli 仓库的公开信息。

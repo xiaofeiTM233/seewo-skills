@@ -1,0 +1,8 @@
+{
+	"mcpServers": {
+		"seewo-xinge": {
+			"type": "http",
+			"url": "https://connector.seewo.com/mcp/apps/seewo_xinge"
+		}
+	}
+}

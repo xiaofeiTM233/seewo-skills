@@ -1,0 +1,20 @@
+server_key: official-dingtalk
+form: cli
+auth_type: cli_native
+display_name: DingTalk
+display_name_cn: 钉钉
+description: 通过官方 CLI 在任务中处理钉钉文档、日程和待办。
+description_cn: 通过官方 CLI 在任务中处理钉钉文档、日程和待办。
+provider_name: 钉钉
+category: productivity
+icon: assets/icon.png
+cli_login:
+  type: oauth_cli
+  commands:
+    status: dws auth status --readonly --format json
+    login: dws auth login --device --no-browser --format json
+    logout: dws auth logout
+cli_install:
+  check: dws --version
+  manual_url: https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli
+cli_definition: cli.json

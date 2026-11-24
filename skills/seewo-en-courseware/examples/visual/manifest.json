@@ -1,0 +1,7 @@
+{
+	"assets": {
+		"example-garden": "assets/garden.png",
+		"example-animals": "assets/animals.png",
+		"example-sine": "assets/sine.png"
+	}
+}

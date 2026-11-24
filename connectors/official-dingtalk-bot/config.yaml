@@ -1,0 +1,11 @@
+server_key: official-dingtalk-bot
+form: channel
+auth_type: channel_native
+channel_driver: dingtalk-bot
+display_name: 钉钉 Bot
+display_name_cn: 钉钉机器人
+description: 在本人钉钉机器人私聊中继续电脑上的任务。
+description_cn: 在本人钉钉机器人私聊中继续电脑上的任务。
+provider_name: 钉钉
+category: productivity
+icon: assets/icon.svg

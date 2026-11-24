@@ -1,0 +1,442 @@
+[
+	{
+		"backgroundColor": "#FFFFFF",
+		"root": {
+			"children": [
+				{
+					"children": [
+						{
+							"height": 54,
+							"kind": "text",
+							"styleRef": "title",
+							"text": "为什么需要研究图象？"
+						},
+						{
+							"height": 30,
+							"kind": "text",
+							"styleRef": "subtitle",
+							"text": "——从「重复出现的规律」说起"
+						}
+					],
+					"gap": 6,
+					"kind": "column"
+				},
+				{
+					"children": [
+						{
+							"children": [
+								{
+									"height": 30,
+									"kind": "text",
+									"styleRef": "caption",
+									"text": "情境一 · 摩天轮"
+								},
+								{
+									"height": 210,
+									"kind": "diagram",
+									"diagram": {
+										"domain": [-1.8, 1.8, -1.2, 1.5],
+										"objects": [
+											{
+												"at": [0, 0],
+												"id": "O",
+												"kind": "point"
+											},
+											{
+												"center": "O",
+												"id": "c1",
+												"kind": "circle",
+												"radius": 1.1
+											},
+											{
+												"at": [0.78, 0.78],
+												"id": "P1"
+											},
+											{
+												"from": "O",
+												"id": "r1",
+												"kind": "segment",
+												"to": "P1"
+											}
+										]
+									}
+								},
+								{
+									"height": 28,
+									"kind": "text",
+									"styleRef": "note",
+									"text": "座舱距离地面的高度，随转动反复升降"
+								}
+							],
+							"flex": 1,
+							"gap": 4,
+							"kind": "column",
+							"padding": 14,
+							"style": {
+								"backgroundColor": "#E8EFF8"
+							}
+						},
+						{
+							"children": [
+								{
+									"height": 30,
+									"kind": "text",
+									"styleRef": "caption",
+									"text": "情境二 · 单摆摆动"
+								},
+								{
+									"height": 210,
+									"kind": "diagram",
+									"diagram": {
+										"domain": [-1.8, 1.8, -1.6, 1.4],
+										"objects": [
+											{
+												"at": [0, 1],
+												"id": "A",
+												"kind": "point"
+											},
+											{
+												"at": [0.85, -0.6],
+												"id": "B",
+												"kind": "point"
+											},
+											{
+												"from": "A",
+												"id": "seg1",
+												"kind": "segment",
+												"to": "B"
+											},
+											{
+												"at": [-0.85, -0.6],
+												"id": "B2",
+												"kind": "point"
+											},
+											{
+												"from": "A",
+												"id": "seg2",
+												"kind": "segment",
+												"to": "B2"
+											}
+										]
+									}
+								},
+								{
+									"height": 28,
+									"kind": "text",
+									"styleRef": "note",
+									"text": "摆球偏离竖直方向的角度，来回往复摆动"
+								}
+							],
+							"flex": 1,
+							"gap": 4,
+							"kind": "column",
+							"padding": 14,
+							"style": {
+								"backgroundColor": "#E8EFF8"
+							}
+						}
+					],
+					"gap": 20,
+					"kind": "row"
+				},
+				{
+					"children": [
+						{
+							"children": [
+								{
+									"height": 36,
+									"kind": "text",
+									"styleRef": "question",
+									"text": "问题驱动"
+								},
+								{
+									"height": 74,
+									"kind": "text",
+									"styleRef": "body",
+									"text": "这些「重复出现的规律」能否用一个函数刻画？\n用什么工具，能最快看清一个周期内的完整面貌？"
+								}
+							],
+							"flex": 4,
+							"gap": 8,
+							"kind": "column"
+						},
+						{
+							"children": [
+								{
+									"height": 38,
+									"kind": "text",
+									"styleRef": "conclusion",
+									"text": "→ 本节课的答案：画图象！"
+								},
+								{
+									"height": 78,
+									"kind": "text",
+									"styleRef": "body",
+									"text": "以角（弧度）为横坐标、正弦值为纵坐标，描出 y = sin x 的图象，\n再读出它的性质——这就是本课的完整路线。"
+								}
+							],
+							"flex": 5,
+							"gap": 8,
+							"kind": "column",
+							"padding": 12,
+							"style": {
+								"backgroundColor": "#E8EFF8"
+							}
+						}
+					],
+					"gap": 20,
+					"kind": "row"
+				}
+			],
+			"gap": 20,
+			"kind": "column",
+			"padding": 40
+		},
+		"theme": {
+			"fontFamily": "微软雅黑",
+			"styles": {
+				"body": {
+					"color": "#1A2230",
+					"fontSize": 22
+				},
+				"caption": {
+					"bold": true,
+					"color": "#0E3F8C",
+					"fontSize": 24
+				},
+				"conclusion": {
+					"bold": true,
+					"color": "#0E3F8C",
+					"fontSize": 26
+				},
+				"note": {
+					"color": "#3F4A55",
+					"fontSize": 18
+				},
+				"question": {
+					"bold": true,
+					"color": "#1E4FA8",
+					"fontSize": 26
+				},
+				"subtitle": {
+					"color": "#4B5563",
+					"fontSize": 24
+				},
+				"title": {
+					"bold": true,
+					"color": "#0E3F8C",
+					"fontSize": 38
+				}
+			}
+		},
+		"title": "为什么需要研究图象"
+	},
+	{
+		"backgroundColor": "#FFFFFF",
+		"root": {
+			"children": [
+				{
+					"height": 48,
+					"kind": "text",
+					"styleRef": "title",
+					"text": "会画、会读，还要会用"
+				},
+				{
+					"children": [
+						{
+							"children": [
+								{
+									"height": 28,
+									"kind": "text",
+									"styleRef": "cardTitle",
+									"text": "例1 · 比较大小"
+								},
+								{
+									"height": 130,
+									"kind": "text",
+									"styleRef": "bodyS",
+									"text": "不求值，比较 sin 250° 与 sin 260°。\n\n思考：两角落在哪个单调区间？\n250°、260° ∈ (180°, 270°)，\n该区间内正弦单调递减。"
+								},
+								{
+									"height": 54,
+									"kind": "text",
+									"styleRef": "answer",
+									"text": "250° < 260°\n⇒ sin 250° > sin 260°"
+								}
+							],
+							"flex": 1,
+							"gap": 8,
+							"kind": "column",
+							"padding": 14,
+							"style": {
+								"backgroundColor": "#E8EFF8"
+							}
+						},
+						{
+							"children": [
+								{
+									"height": 28,
+									"kind": "text",
+									"styleRef": "cardTitle",
+									"text": "例2 · 求单调递增区间"
+								},
+								{
+									"height": 200,
+									"kind": "text",
+									"styleRef": "bodyS",
+									"text": "求 y = sin 2x 的单调递增区间。\n\n换元：令 u = 2x。\n由 sin u 的增区间：\nu ∈ [-π/2+2kπ, π/2+2kπ]\n即 2x ∈ [-π/2+2kπ, π/2+2kπ]"
+								},
+								{
+									"height": 60,
+									"kind": "text",
+									"styleRef": "answer",
+									"text": "解得 x ∈ [-π/4+kπ, π/4+kπ]，k∈Z"
+								}
+							],
+							"flex": 1,
+							"gap": 8,
+							"kind": "column",
+							"padding": 14,
+							"style": {
+								"backgroundColor": "#E8EFF8"
+							}
+						}
+					],
+					"flex": 4,
+					"gap": 24,
+					"kind": "row"
+				},
+				{
+					"children": [
+						{
+							"children": [
+								{
+									"height": 30,
+									"kind": "text",
+									"styleRef": "stepTitle",
+									"text": "画"
+								},
+								{
+									"height": 40,
+									"kind": "text",
+									"styleRef": "bodyS",
+									"text": "五点法快速作图,看清全貌"
+								}
+							],
+							"flex": 1,
+							"gap": 4,
+							"kind": "column",
+							"padding": 10,
+							"style": {
+								"backgroundColor": "#E8EFF8"
+							}
+						},
+						{
+							"children": [
+								{
+									"height": 30,
+									"kind": "text",
+									"styleRef": "stepTitle",
+									"text": "读"
+								},
+								{
+									"height": 40,
+									"kind": "text",
+									"styleRef": "bodyS",
+									"text": "从图象读出周期、奇偶、单调、最值"
+								}
+							],
+							"flex": 1,
+							"gap": 4,
+							"kind": "column",
+							"padding": 10,
+							"style": {
+								"backgroundColor": "#E8EFF8"
+							}
+						},
+						{
+							"children": [
+								{
+									"height": 30,
+									"kind": "text",
+									"styleRef": "stepTitle",
+									"text": "用"
+								},
+								{
+									"height": 40,
+									"kind": "text",
+									"styleRef": "bodyS",
+									"text": "比较大小、求区间、解决周期问题"
+								}
+							],
+							"flex": 1,
+							"gap": 4,
+							"kind": "column",
+							"padding": 10,
+							"style": {
+								"backgroundColor": "#E8EFF8"
+							}
+						}
+					],
+					"flex": 2,
+					"gap": 16,
+					"kind": "row"
+				},
+				{
+					"children": [
+						{
+							"height": 34,
+							"kind": "text",
+							"styleRef": "homework",
+							"text": "作业：课本相应习题 · 画 y = sin x 与 y = cos x 在 [-2π, 2π] 简图 · 求 y = cos 2x 的递减区间 · 思考 y = |sin x| 的周期"
+						}
+					],
+					"flex": 1,
+					"gap": 8,
+					"kind": "column",
+					"padding": 10,
+					"style": {
+						"backgroundColor": "#F7F9FC"
+					}
+				}
+			],
+			"gap": 12,
+			"kind": "column",
+			"padding": 36
+		},
+		"theme": {
+			"fontFamily": "微软雅黑",
+			"styles": {
+				"answer": {
+					"bold": true,
+					"color": "#D9534F",
+					"fontSize": 20
+				},
+				"bodyS": {
+					"color": "#1A2230",
+					"fontSize": 20
+				},
+				"cardTitle": {
+					"bold": true,
+					"color": "#0E3F8C",
+					"fontSize": 25
+				},
+				"homework": {
+					"color": "#1E4FA8",
+					"fontSize": 19
+				},
+				"stepTitle": {
+					"bold": true,
+					"color": "#0E3F8C",
+					"fontSize": 24
+				},
+				"title": {
+					"bold": true,
+					"color": "#0E3F8C",
+					"fontSize": 34
+				}
+			}
+		},
+		"title": "会画会读还会用"
+	}
+]

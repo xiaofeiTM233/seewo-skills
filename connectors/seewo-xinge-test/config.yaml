@@ -1,0 +1,19 @@
+server_key: seewo-xinge-test
+display_name: Seewo Xinge Test
+display_name_cn: 希沃信鸽（测试环境）
+description: 校本教研，课例研究
+description_cn: 校本教研，课例研究
+provider_name: 希沃
+category: 教师教研
+icon: assets/icon.png
+form: mcp
+auth_type: none
+connection_consent:
+  version: 1
+  scopes:
+    - id: lesson-preparation.manage
+      description_cn: 查看、创建和编辑本校集备，管理主备及参备教师，完成集备操作
+    - id: lesson-evaluation.manage
+      description_cn: 查看、创建和编辑本校听评课活动，开始评课、提交评价及评分，查看评分报告
+    - id: teaching-research.analyze
+      description_cn: 查询集备、听评课及教研看板数据，进行数据分析

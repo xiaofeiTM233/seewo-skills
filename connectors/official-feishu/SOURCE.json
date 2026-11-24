@@ -1,0 +1,6 @@
+{
+	"repository": "https://github.com/larksuite/cli.git",
+	"documentation": "installed-cli",
+	"discoveryCommands": ["skills list", "skills read <name>[/<path>]", "--help", "schema <service.resource.method>"],
+	"vendoredSkills": false
+}

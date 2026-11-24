@@ -1,0 +1,14 @@
+server_key: official-github-cli
+form: cli
+auth_type: cli_native
+display_name: GitHub CLI
+display_name_cn: GitHub CLI
+description: 通过官方 GitHub CLI 查询仓库并执行明确授权的操作。
+description_cn: 通过官方 GitHub CLI 查询仓库并执行明确授权的操作。
+provider_name: GitHub
+category: productivity
+icon: assets/icon.svg
+cli_install:
+  check: gh --version
+  manual_url: https://cli.github.com/
+cli_definition: cli.json

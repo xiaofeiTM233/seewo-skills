@@ -1,0 +1,11 @@
+server_key: official-wechat
+form: channel
+auth_type: channel_native
+channel_driver: wechat-ilink
+display_name: WeChat
+display_name_cn: 微信
+description: 在本人微信中继续电脑上的一个任务，发送文字、图片和文件并接收回复。
+description_cn: 在本人微信中继续电脑上的一个任务，发送文字、图片和文件并接收回复。
+provider_name: 微信
+category: productivity
+icon: assets/icon.svg

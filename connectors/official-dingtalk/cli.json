@@ -1,0 +1,110 @@
+{
+	"schemaVersion": 2,
+	"driver": "scripts/cli.mjs",
+	"commands": {
+		"login": ["auth", "login", "--device", "--no-browser", "--format", "json"],
+		"status": ["auth", "status", "--readonly", "--format", "json"],
+		"logout": ["auth", "logout", "--profile", "{account}", "--format", "json"]
+	},
+	"status": {
+		"authentication": "required",
+		"format": "json",
+		"ready": {
+			"all": [
+				{
+					"path": ["authenticated"],
+					"operator": "equals",
+					"value": true
+				}
+			]
+		},
+		"unknown": {
+			"all": [
+				{
+					"path": ["reason"],
+					"operator": "non-empty"
+				}
+			]
+		},
+		"authRequired": {
+			"all": [
+				{
+					"path": ["authenticated"],
+					"operator": "equals",
+					"value": false
+				}
+			],
+			"any": [
+				{
+					"path": ["reason"],
+					"operator": "exists",
+					"value": false
+				},
+				{
+					"path": ["reason"],
+					"operator": "equals",
+					"value": ""
+				}
+			]
+		},
+		"account": {
+			"parts": [
+				{
+					"path": ["corp_id"]
+				},
+				{
+					"path": ["user_id"]
+				}
+			],
+			"separator": ":",
+			"name": {
+				"path": ["user_name"]
+			}
+		}
+	},
+	"challenge": {
+		"textUrls": "standalone-line",
+		"textUrlSelection": "first",
+		"userCodePrefix": "授权码:"
+	},
+	"commandPolicy": {
+		"managementCommands": [["upgrade"], ["skill"], ["plugin"], ["recovery"]],
+		"reservedOptions": [
+			{
+				"names": ["--client-id"]
+			},
+			{
+				"names": ["--client-secret"]
+			},
+			{
+				"names": ["--app-key"]
+			},
+			{
+				"names": ["--app-secret"]
+			},
+			{
+				"names": ["--access-token"]
+			},
+			{
+				"names": ["--base-url"]
+			},
+			{
+				"names": ["--endpoint"]
+			},
+			{
+				"names": ["--insecure"]
+			},
+			{
+				"names": ["--intl"]
+			}
+		],
+		"fixedArguments": [
+			{
+				"option": "--profile",
+				"value": {
+					"binding": "account"
+				}
+			}
+		]
+	}
+}

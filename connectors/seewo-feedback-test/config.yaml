@@ -1,0 +1,17 @@
+server_key: seewo-feedback-test
+display_name: Seewo Feedback Test
+display_name_cn: 希沃课堂反馈（测试环境）
+description: 循证教学研究助手
+description_cn: 循证教学研究助手
+provider_name: 希沃
+category: 学校管理
+icon: assets/icon.png
+form: mcp
+auth_type: none
+connection_consent:
+  version: 1
+  scopes:
+    - id: classroom-report.read
+      description_cn: 查看有权限访问的课堂报告、教学分析、课堂实录和视频
+    - id: classroom-video.clip-download
+      description_cn: 按需截取并下载课堂视频片段

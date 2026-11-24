@@ -1,0 +1,88 @@
+{
+	"schemaVersion": 2,
+	"driver": "scripts/cli.mjs",
+	"commands": {
+		"login": ["auth", "login", "--web", "--hostname", "github.com", "--git-protocol", "https", "--insecure-storage"],
+		"status": ["auth", "status", "--json", "hosts"],
+		"logout": ["auth", "logout", "--hostname", "github.com", "--user", "{account}"]
+	},
+	"business": {
+		"publicCommands": [["completion"]]
+	},
+	"status": {
+		"authentication": "required",
+		"format": "json",
+		"record": {
+			"path": ["hosts", "github.com"],
+			"where": {
+				"all": [
+					{
+						"path": ["active"],
+						"operator": "equals",
+						"value": true
+					}
+				]
+			}
+		},
+		"ready": {
+			"all": [
+				{
+					"path": ["state"],
+					"operator": "equals",
+					"value": "success"
+				}
+			]
+		},
+		"authRequired": {
+			"any": [
+				{
+					"path": ["hosts", "github.com"],
+					"operator": "exists",
+					"from": "root",
+					"value": false
+				},
+				{
+					"path": ["hosts", "github.com"],
+					"operator": "empty",
+					"from": "root"
+				},
+				{
+					"path": ["error"],
+					"operator": "starts-with",
+					"value": "HTTP 401:"
+				},
+				{
+					"path": ["error"],
+					"operator": "contains",
+					"value": "(HTTP 401)"
+				}
+			],
+			"all": [
+				{
+					"from": "root",
+					"path": ["hosts"],
+					"operator": "type",
+					"value": "object"
+				},
+				{
+					"from": "process",
+					"path": ["exitCode"],
+					"operator": "one-of",
+					"values": [0, 1]
+				}
+			]
+		},
+		"account": {
+			"parts": [
+				{
+					"path": ["login"]
+				}
+			]
+		}
+	},
+	"challenge": {
+		"textUrls": "https",
+		"userCodePrefix": "one-time code:"
+	},
+	"commandPolicy": {}
+}

@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "package": "@micro-flux/cli",
+  "version": "0.21.0",
+  "skill": "micro-lesson-creation"
+}

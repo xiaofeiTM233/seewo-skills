@@ -1,0 +1,11 @@
+server_key: official-feishu-bot
+form: channel
+auth_type: channel_native
+channel_driver: feishu-bot
+display_name: 飞书 Bot
+display_name_cn: 飞书机器人
+description: 在本人飞书机器人私聊中继续电脑上的任务。
+description_cn: 在本人飞书机器人私聊中继续电脑上的任务。
+provider_name: 飞书
+category: productivity
+icon: assets/icon.svg
